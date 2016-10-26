@@ -6,7 +6,7 @@ require 'vagrant-chef-solo-mount-options/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'vagrant-chef-solo-mount-options'
-  spec.version       = '1.0.0'.freeze
+  spec.version       = VagrantPlugins::ChefMountOptions::VERSION
   spec.authors       = ['Kieren Evans']
   spec.email         = ['kevans+vagrant_plugins@inviqa.com']
 
