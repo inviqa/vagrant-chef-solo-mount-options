@@ -2,6 +2,7 @@ require Vagrant.source_root.join('plugins', 'provisioners', 'chef', 'plugin')
 
 module VagrantPlugins
   module ChefMountOptions
+    # Declare the plugin for vagrant
     class Plugin < Vagrant.plugin('2')
       extend VagrantPlugins::Chef
 

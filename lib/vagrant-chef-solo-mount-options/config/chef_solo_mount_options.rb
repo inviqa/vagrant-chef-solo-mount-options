@@ -4,6 +4,7 @@ require Vagrant.source_root.join('plugins', 'provisioners', 'chef', 'config', 'c
 module VagrantPlugins
   module ChefMountOptions
     module Config
+      # This class implements config for chef-solo, with additional options for mount points.
       class ChefSoloMountOptions < VagrantPlugins::Chef::Config::ChefSolo
         include Vagrant::Util::Presence
 
@@ -14,7 +15,7 @@ module VagrantPlugins
         def initialize
           super
 
-          @synced_folder_options  = UNSET_VALUE
+          @synced_folder_options = UNSET_VALUE
         end
 
         def finalize!
