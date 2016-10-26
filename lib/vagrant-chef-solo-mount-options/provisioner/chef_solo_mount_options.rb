@@ -1,6 +1,4 @@
 require 'vagrant/util/counter'
-# require 'vagrant/plugins/provisioners/chef/provisioner/chef_solo'
-
 require Vagrant.source_root.join('plugins', 'provisioners', 'chef', 'provisioner', 'chef_solo')
 
 module VagrantPlugins
@@ -8,7 +6,6 @@ module VagrantPlugins
     module Provisioner
       # This class implements provisioning via chef-solo, with options for mount points.
       class ChefSoloMountOptions < VagrantPlugins::Chef::Provisioner::ChefSolo
-        # Vagrant.plugin(2, :provisioner)
         extend Vagrant::Util::Counter
         include Vagrant::Util::Counter
 

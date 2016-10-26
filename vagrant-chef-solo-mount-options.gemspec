@@ -2,11 +2,13 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
+require 'vagrant-chef-solo-mount-options/version'
+
 Gem::Specification.new do |spec|
   spec.name          = 'vagrant-chef-solo-mount-options'
   spec.version       = '1.0.0'.freeze
   spec.authors       = ['Kieren Evans']
-  spec.email         = ['kevans+vagrant_tasks@inviqa.com']
+  spec.email         = ['kevans+vagrant_plugins@inviqa.com']
 
   spec.summary       = 'Vagrant Chef Solo Provisioner, with mount options'
   spec.description   = 'Vagrant Chef Solo Provisioner, with mount options'
